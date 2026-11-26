@@ -9,11 +9,14 @@
 <body>
     <div class="card">
         <h1>Form Sederhana</h1>
-        <form method="post" action="/">
+        <form action="/submit" method="post" >
             <label for="nama">Masukkan nama Anda:</label>
             <input type="text" id="nama" name="nama" placeholder="Contoh: Faisal gtg">
             <button type="submit">Kirim</button>
         </form>
     </div>
+    {% if hasil %}
+    <p class="hasil">{{ hasil }}</p>
+    {% endif %}
 </body>
 </html>
